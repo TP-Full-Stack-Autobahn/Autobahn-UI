@@ -25,6 +25,10 @@ npm run yalc:build
 ## How to use
 
 ```bash
+yalc add autobahn-ui
+```
+
+```bash
 npm install --save autobahn-ui
 ```
 

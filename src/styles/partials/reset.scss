@@ -1,5 +1,5 @@
 // Input
-input, select {
+input:not([type="radio"]), select {
     border: none;
     background-image: none;
     background-color: transparent;

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c", 
-    "yalc:build": "npm run build &&  yalc publish --private",
+    "yalc:build": "npm run build && yalc publish --private",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

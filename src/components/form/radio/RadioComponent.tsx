@@ -1,10 +1,9 @@
 import React from 'react';
 
 export type InputProps = {
-  showLabel?: boolean;
-  label: string; 
+  label: string,
+  value: string,
   name: string; 
-  options: Object;  
   style?: Object
 }
 
@@ -12,16 +11,15 @@ export type InputProps = {
  * Primary UI component for user interaction
  */
 export const RadioComponent: React.FC<InputProps> = (props) => {
-  const {showLabel = true, label, options, name, style} = props;
+  const {value, label, name, style} = props;
 
-  const classNames = `input-autobahn`;
+  const classNames = `atbh-radio`;
+
 
   return (
     <div className={classNames}>
-      {showLabel && 
-        <label htmlFor={name}>{label}</label>
-      }
-      {/* <input id={name} type={type} name={name} placeholder={placeholder} style={style} {...props}/> */}
+      <input type="radio" id={name} value={value} style={style} {...props}/>
+      <label htmlFor={name}>{label}</label>
     </div>
   );
 };
