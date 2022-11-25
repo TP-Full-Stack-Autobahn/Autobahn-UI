@@ -9,7 +9,7 @@
     "yalc:build": "npm run build && yalc publish --private",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "update": "git pull && npm run yalc:build"
+    "update": "git pull && npm run yalc:build",
     "sass:build": "sass src/styles/app.scss dist/index.css"
   },
   "keywords": [],
