@@ -5,7 +5,7 @@ export type ButtonProps = {
   variant?: "primary" | "secondary"
   shape?: "rounded"
   className?: string
-  onClick: React.MouseEventHandler<HTMLElement>
+  onClick?: React.MouseEventHandler<HTMLElement>
 }
 
 /**
