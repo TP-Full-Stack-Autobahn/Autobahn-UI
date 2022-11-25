@@ -12,7 +12,7 @@ export type ButtonProps = {
  */
 export const ButtonComponent: React.FC<ButtonProps> = (props) => {
   const {children, variant, shape, style} = props;
-  const classNames = `btn btn-${variant} btn-${shape}`;
+  const classNames = `atbh-btn atbh-btn-${variant} atbh-btn-${shape}`;
 
   return (
     <button className={classNames} {...props} style={style}>
