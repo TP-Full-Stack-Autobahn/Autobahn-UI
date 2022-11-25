@@ -1,21 +1,21 @@
 import React from 'react';
 
-export interface ButtonProps {
+export type ButtonProps = {
   children: React.ReactNode;
-  variant: "primary" | "secondary" | "danger"; 
+  variant: "primary" | "secondary"; 
   shape?: "rounded";
-  onClick?: () => void;
+  style?: Object
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ButtonComponent: React.FC<ButtonProps> = (props) => {
-  const {children, variant, shape, onClick} = props;
+  const {children, variant, shape, style} = props;
   const classNames = `btn btn-${variant} btn-${shape}`;
 
   return (
-    <button className={classNames} {...props}>
+    <button className={classNames} {...props} style={style}>
       {children}
     </button>
   );

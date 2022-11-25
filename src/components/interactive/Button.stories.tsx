@@ -14,11 +14,12 @@ export const Primary = Template.bind({});
 Primary.args = {
   children: "Primary",
   variant: "primary",
+  shape: "",
 };
 
-export const Danger = Template.bind({});
-Danger.args = {
-  children: "Danger",
-  variant: "danger",
-  shape: "rounded",
+export const Secondary = Template.bind({});
+Secondary.args = {
+  children: "Secondary",
+  variant: "secondary",
+  shape: "",
 };
