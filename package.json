@@ -2,7 +2,7 @@
   "name": "autobahn-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -10,8 +10,11 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "update": "git pull && npm run yalc:build",
-    "sass:build": "sass src/styles/app.scss dist/index.css"
+    "sass:build": "sass src/styles/app.scss dist/app.css"
   },
+  "files": [
+    "dist/"
+  ],
   "keywords": [],
   "author": "Quentin Mendel",
   "license": "ISC",
