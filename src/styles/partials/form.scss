@@ -1,5 +1,5 @@
 // Generic 
-.atbh-input-autobahn, .atbh-select{
+.atbh-input, .atbh-select{
     box-sizing: border-box;
     padding: 10px;
     max-width: 343px;
@@ -17,7 +17,6 @@
         height: 20px;
     }
     input, select {
-        height: 40px;
         color:#C00000;
     }
 }

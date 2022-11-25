@@ -4,7 +4,7 @@ export type SelectProps = {
   showLabel?: boolean;
   label: string; 
   name: string; 
-  options: string; 
+  options: Array<string>;
   style?: Object
 }
 
@@ -15,10 +15,10 @@ export const SelectComponent: React.FC<SelectProps> = (props) => {
   const {showLabel = true, label, name, options, style} = props;
 
   const classNames = `atbh-select`;
-
-  const selectOptions = Object.keys(options).map(key => 
-    <option value={key}>{options[key]}</option>
-  )
+    
+  const selectOptions = Object.entries(options).map(([key, value]) => {
+    return <option value={key}>{value}</option>
+  });
   
   return (
     <div className="atbh-select-container">
