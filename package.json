@@ -10,7 +10,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "update": "git pull && npm run yalc:build",
-    "sass:build": "sass src/styles/app.scss dist/app.css"
+    "sass:build": "sass src/styles/app.scss dist/index.css"
   },
   "keywords": [],
   "author": "Quentin Mendel",
