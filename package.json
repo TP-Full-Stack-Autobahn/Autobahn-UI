@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c", 
+    "build": "rollup -c",
     "yalc:build": "npm run build && yalc publish --private",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "update": "git pull && npm run yalc:build"
+    "sass:build": "sass src/styles/app.scss dist/index.css"
   },
   "keywords": [],
   "author": "Quentin Mendel",
