@@ -1,11 +1,11 @@
 import React from 'react';
 
 export type InputProps = {
-  showLabel?: boolean;
-  label: string; 
-  type: string; 
-  placeholder: string; 
-  name: string; 
+  showLabel?: boolean
+  label: string
+  type: string
+  placeholder: string
+  name: string
   style?: Object
 }
 

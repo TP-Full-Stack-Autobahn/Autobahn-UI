@@ -9,7 +9,7 @@
     "yalc:build": "npm run build && yalc publish --private",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "sass:build": "sass src/styles/app.scss dist/index.css"
+    "sass:build": "sass src/styles/app.scss dist/app.css"
   },
   "keywords": [],
   "author": "Quentin Mendel",
