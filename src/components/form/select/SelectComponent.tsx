@@ -1,20 +1,18 @@
 import React from 'react';
 
 export type SelectProps = {
-  showLabel?: boolean;
-  label: string; 
-  name: string; 
-  options: Array<string>;
-  style?: Object
+  showLabel?: boolean
+  label?: string
+  name: string
+  options: Array<string>
+  className?: string
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const SelectComponent: React.FC<SelectProps> = (props) => {
-  const {showLabel = true, label, name, options, style} = props;
-
-  const classNames = `atbh-select`;
+  const {showLabel = true, label, name, options, className} = props;
     
   const selectOptions = Object.entries(options).map(([key, value]) => {
     return <option value={key}>{value}</option>
@@ -22,11 +20,11 @@ export const SelectComponent: React.FC<SelectProps> = (props) => {
   
   return (
     <div className="atbh-select-container">
-      <div className={classNames}>
-        {showLabel && 
+      <div className={`atbh-select ${className}`}>
+        {showLabel && label &&
           <label htmlFor={name}>{label}</label>
         }
-        <select id={name} name={name} style={style} {...props}>
+        <select id={name} name={name} {...props}>
           {selectOptions}
         </select>
       </div>
