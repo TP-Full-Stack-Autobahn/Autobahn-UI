@@ -15,7 +15,7 @@ export const ButtonComponent: React.FC<ButtonProps> = (props) => {
   const {children, variant = "primary", shape, className, onClick} = props;
 
   return (
-    <button className={`atbh-btn atbh-btn-${variant} atbh-btn-${shape} ${className}`} onClick={onClick}>
+    <button className={`atbh-btn ${variant && `atbh-btn-${variant}`} ${shape && `atbh-btn-${shape}`} ${className}`} onClick={onClick}>
       {children}
     </button>
   );
