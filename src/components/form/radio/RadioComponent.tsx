@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type InputProps = {
+export type RadioProps = {
   label: string
   value: string
   name: string
@@ -10,7 +10,7 @@ export type InputProps = {
 /**
  * Primary UI component for user interaction
  */
-export const RadioComponent: React.FC<InputProps> = (props) => {
+export const RadioComponent: React.FC<RadioProps> = (props) => {
   const {value, label, className, name} = props;
 
   return (
