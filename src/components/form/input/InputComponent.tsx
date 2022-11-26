@@ -20,7 +20,7 @@ export const InputComponent: React.FC<InputProps> = (props) => {
       {showLabel && label &&
         <label htmlFor={name}>{label}</label>
       }
-      <input id={name} type={type} name={name} placeholder={placeholder}  {...props}/>
+      <input id={name} type={type} name={name} placeholder={placeholder} />
     </div>
   );
 };

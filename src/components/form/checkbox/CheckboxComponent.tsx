@@ -15,7 +15,7 @@ export const CheckboxComponent: React.FC<CheckboxProps> = (props) => {
 
   return (
     <div className={`atbh-checkbox ${className && `${className}`}`}>
-      <input type="checkbox" id={value} value={value} name={name} {...props}/>
+      <input type="checkbox" id={value} value={value} name={name}/>
       <label htmlFor={value}>{label}</label>
     </div>
   );

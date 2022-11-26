@@ -20,12 +20,12 @@ export const SelectComponent: React.FC<SelectProps> = (props) => {
   });
   
   return (
-    <div className="atbh-select-container">
-      <div className={`atbh-select ${className && `${className}`}`}>
+    <div className={`atbh-select-container ${className && `${className}`}`}>
+      <div className="atbh-select">
         {showLabel && label &&
           <label htmlFor={name}>{label}</label>
         }
-        <select id={name} name={name} {...props}>
+        <select id={name} name={name}>
           {defaultOption && 
             <option value="" selected disabled hidden>{defaultOption}</option>
           }
