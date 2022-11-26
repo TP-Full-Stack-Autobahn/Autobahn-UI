@@ -11,7 +11,7 @@ export type RadioProps = {
  * Primary UI component for user interaction
  */
 export const RadioComponent: React.FC<RadioProps> = (props) => {
-  const {value, label, className = "", name} = props;
+  const {value, label, className, name} = props;
 
   return (
     <div className={`atbh-radio ${className && `${className}`}`}>

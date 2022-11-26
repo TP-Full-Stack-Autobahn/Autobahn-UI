@@ -12,7 +12,7 @@ export type SelectProps = {
  * Primary UI component for user interaction
  */
 export const SelectComponent: React.FC<SelectProps> = (props) => {
-  const {showLabel = true, label = "", name, options, className = ""} = props;
+  const {showLabel = true, label = "", name, options, className} = props;
     
   const selectOptions = Object.entries(options).map(([key, value]) => {
     return <option value={key}>{value}</option>
