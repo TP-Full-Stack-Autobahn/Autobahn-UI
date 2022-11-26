@@ -4,7 +4,8 @@ export type SelectProps = {
   showLabel?: boolean
   label?: string
   name: string
-  options: Object
+  options: Object,
+  optionSelected: string
   className?: string
 }
 
@@ -12,7 +13,7 @@ export type SelectProps = {
  * Primary UI component for user interaction
  */
 export const SelectComponent: React.FC<SelectProps> = (props) => {
-  const {showLabel = true, label = "", name, options, className} = props;
+  const {showLabel = true, label = "", name, options, className, optionSelected} = props;
     
   const selectOptions = Object.entries(options).map(([key, value]) => {
     return <option value={key}>{value}</option>
@@ -25,6 +26,9 @@ export const SelectComponent: React.FC<SelectProps> = (props) => {
           <label htmlFor={name}>{label}</label>
         }
         <select id={name} name={name} {...props}>
+          {optionSelected && 
+            <option value="" selected disabled hidden>{optionSelected}</option>
+          }
           {selectOptions}
         </select>
       </div>
