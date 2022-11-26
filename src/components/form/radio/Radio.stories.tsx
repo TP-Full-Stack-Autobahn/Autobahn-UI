@@ -1,6 +1,6 @@
 import React from "react";
 import { Story } from "@storybook/react";
-import { RadioComponent, InputProps } from "./RadioComponent";
+import { RadioComponent, RadioProps } from "./RadioComponent";
 
 export default {
   title: "Radio",
@@ -8,7 +8,7 @@ export default {
 ,
 };
 
-const Template: Story<InputProps> = args => <RadioComponent{...args} />;
+const Template: Story<RadioProps> = args => <RadioComponent{...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
