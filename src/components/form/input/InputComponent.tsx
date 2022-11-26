@@ -3,7 +3,7 @@ import React from 'react';
 export type InputProps = {
   showLabel?: boolean
   label?: string
-  type: "text" | "email" | "number"
+  type: "text" | "email" | "number" | "password"
   placeholder?: string
   name: string
   className?: string
