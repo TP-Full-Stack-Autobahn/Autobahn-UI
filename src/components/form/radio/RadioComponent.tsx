@@ -15,8 +15,8 @@ export const RadioComponent: React.FC<RadioProps> = (props) => {
 
   return (
     <div className={`atbh-radio ${className && `${className}`}`}>
-      <input type="radio" id={name} value={value} {...props}/>
-      <label htmlFor={name}>{label}</label>
+      <input type="radio" id={value} value={value} name={name} {...props}/>
+      <label htmlFor={value}>{label}</label>
     </div>
   );
 };
