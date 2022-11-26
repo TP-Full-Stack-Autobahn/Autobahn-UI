@@ -15,13 +15,13 @@ export type SelectProps = {
 export const SelectComponent: React.FC<SelectProps> = (props) => {
   const {showLabel = true, label = "", name, options, className, defaultOption} = props;
     
-  const selectOptions = Object.entries(options).map(([key, value]) => {
-    return <option value={key}>{value}</option>
+  const selectOptions = Object.entries(options).map(([key, value], index) => {
+    return <option key={index} value={key}>{value}</option>
   });
   
   return (
-    <div className={`atbh-select-container ${className && `${className}`}`}>
-      <div className="atbh-select">
+    <div className={`atbh-select ${className && `${className}`}`}>
+      <div className="atbh-select-container ">
         {showLabel && label &&
           <label htmlFor={name}>{label}</label>
         }

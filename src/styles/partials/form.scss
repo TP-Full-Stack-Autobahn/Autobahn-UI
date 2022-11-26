@@ -9,9 +9,19 @@
     display: flex;
     flex-direction: column;
 
+    &:focus-within {
+        border-bottom: 2px solid #000000;
+        label {
+            color: #000000;
+        }
+    }
+
     label {
         height: 20px;
         color: rgba(0, 0, 0, 0.5);
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     input, select {
@@ -20,22 +30,13 @@
     }
 }
 
-//Input
-.atbh-input, .atbh-select-container {
-    &:focus-within {
-        border-bottom: 2px solid #000000;
-        label {
-            color: #000000;
-        }
-    }
-}
-
 // Select 
-.atbh-select-container {
-    display: flex;
-    max-width: 343px;
-    background: #F9F9F9;
-    .atbh-select {
+.atbh-select {
+    flex-direction: row;
+    .atbh-select-container {
+        display: flex;
+        flex-direction: column;
+        background: #F9F9F9;
         flex: 1;
     }
     .atbh-select-arrow {
@@ -46,7 +47,13 @@
     }
 }
 
-// Radio 
+
+// Radio, Checkbox labels
 .atbh-radio, .atbh-checkbox {
     accent-color: #000000;
+    input,label {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
