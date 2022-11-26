@@ -13,10 +13,10 @@ export type InputProps = {
  * Primary UI component for user interaction
  */
 export const InputComponent: React.FC<InputProps> = (props) => {
-  const {showLabel = true, label = "", type, placeholder, className, name} = props;
+  const {showLabel = true, label = "", type, placeholder, className = "", name} = props;
 
   return (
-    <div className={ `atbh-input ${className}`}>
+    <div className={ `atbh-input ${className && `${className}`}`}>
       {showLabel && label &&
         <label htmlFor={name}>{label}</label>
       }
