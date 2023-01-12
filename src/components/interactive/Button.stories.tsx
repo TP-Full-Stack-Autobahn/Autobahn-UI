@@ -4,8 +4,7 @@ import { ButtonComponent, ButtonProps } from "./ButtonComponent";
 
 export default {
   title: "Button",
-  component: ButtonComponent
-,
+  component: ButtonComponent,
 };
 
 const Template: Story<ButtonProps> = args => <ButtonComponent{...args} />;
@@ -15,6 +14,7 @@ Primary.args = {
   children: "Primary",
   variant: "primary",
   shape: "",
+  loading: false
 };
 
 export const Secondary = Template.bind({});
@@ -22,4 +22,5 @@ Secondary.args = {
   children: "Secondary",
   variant: "secondary",
   shape: "",
+  loading: false
 };
